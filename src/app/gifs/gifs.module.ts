@@ -4,9 +4,15 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { Gif } from './interfaces/gif.interface';
 import { CardListComponent } from './components/card-list/card-list.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-  declarations: [HomePageComponent, SearchBoxComponent, CardListComponent],
+  declarations: [
+    HomePageComponent,
+    SearchBoxComponent,
+    CardListComponent,
+    CardComponent,
+  ],
   imports: [CommonModule],
   exports: [HomePageComponent],
 })

@@ -5,7 +5,8 @@
 
   <section class="list-group list-reset">
 
-    <button *ngFor="let history of allTagsHistory" class="list-group-item list-group-item-action">{{history |
+    <button type="button" (click)="searchTag(history)" *ngFor="let history of allTagsHistory"
+      class="list-group-item list-group-item-action">{{history |
       titlecase}}</button>
   </section>
 </aside>
