@@ -1,14 +1,15 @@
 <figure class="text-center card mb-2 bg-dark">
   <!-- image -->
 
-  <img
+  <!-- <img
     [src]="gif.images.downsized_medium.url"
     [alt]="gif.title"
     alt="{{ gif.title }}"
     class="card-img-tops"
-  />
+  /> -->
+  <shared-lazy-image [url]="gif.images.downsized_medium.url" [alt]="gif.title || 'No name'"></shared-lazy-image>
   <dl class="card-body text-white">
     <dt class="card-text"></dt>
-    <dd>{{ gif.title }}</dd>
+    <dd>{{ gif.title || "No title" }}</dd>
   </dl>
 </figure>

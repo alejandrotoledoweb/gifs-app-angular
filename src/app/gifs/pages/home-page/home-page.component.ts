@@ -11,6 +11,8 @@ export class HomePageComponent {
   constructor(private gifsService: GifsService) {}
 
   get gifs(): Gif[] {
+    console.log('service call in home')
     return this.gifsService.gifList;
+
   }
 }
