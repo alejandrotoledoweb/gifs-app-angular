@@ -1,11 +1,14 @@
 <figure class="text-center card mb-2 bg-dark">
   <!-- image -->
 
-  <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" alt="{{gif.title}}" class="card-img-tops" />
+  <img
+    [src]="gif.images.downsized_medium.url"
+    [alt]="gif.title"
+    alt="{{ gif.title }}"
+    class="card-img-tops"
+  />
   <dl class="card-body text-white">
-
     <dt class="card-text"></dt>
     <dd>{{ gif.title }}</dd>
   </dl>
-
 </figure>
